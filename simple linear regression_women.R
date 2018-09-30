@@ -7,4 +7,3 @@ range(women)
 (p=predict(fit,newdata=ndata))
 cbind(ndata,p)
 plot(fit)
-
