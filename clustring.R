@@ -2,4 +2,5 @@ df <- data.frame(age = c(18, 21, 22, 24, 26, 26, 27, 30, 31, 35, 39, 40, 41, 42,
 df
 head(df)
 km1 = kmeans(df,centers=3)                 
-km1
+km
+
