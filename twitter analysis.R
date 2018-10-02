@@ -31,8 +31,8 @@ load("twitter authentication.Rdata")
 
 setup_twitter_oauth(consumerKey, consumerSecret, AccessToken, AccessTokenSecret)
 #type 1 : Yes 
-#search.string <- "#businessanalytics"
-search.string <- "#marketinganalytics"
+#search.string <- "#comment"
+search.string <- "#asiangames"
 
 no.of.tweets <- 100
 
@@ -41,7 +41,7 @@ tweets
 tweets[1:10]
 #Another Topics
 #search.string <- "#indvseng"
-search.string <- "#asiacup"
+search.string <- "#asiangames"
 
 no.of.tweets <- 100
 
@@ -54,12 +54,12 @@ mentions(n=15)   # my tags
 mentions(n=5)
 
 #for user - 
-(tweets = userTimeline("sumanmohanty", n=10))
-userTimeline("drisha_sinha", n=5)
+(tweets = userTimeline("realDonaldTrump", n=100))
+userTimeline("realDonaldTrump", n=100)
 
 #------------------------------------
 ?userTimeline
-tweets = userTimeline("realDonaldTrump", n=100)
+tweets = userTimeline("varungandhi8", n=100)
 #english
 tweets[1:5]
 n.tweet <- length(tweets)
@@ -106,3 +106,4 @@ head(category_senti2)
 
 #----
 table(category_senti)
+
